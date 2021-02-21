@@ -19,7 +19,6 @@ public class PlayerMovement : MonoBehaviour
         //Constant speed
         transform.Translate(Vector3.forward * Time.deltaTime * speed);
 
-
         //Move horizontal
         horizontalInput = Input.GetAxis("Horizontal");
         transform.Translate(Vector3.right * Time.deltaTime * turnSpeed * horizontalInput / 100);
